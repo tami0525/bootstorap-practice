@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script>
+      $(window).scroll(function (){
+      	$(".animationleft").each(function(){
+      	  var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      	  var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      	  var windowHeight = $(window).height(); //ウインドウの高さを取得
+      	  if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+      	    $(this).addClass('active'); //クラス「active」を与える
+      	  }
+      	});
+      });
+
+      $(window).scroll(function (){
+      	$(".animationright").each(function(){
+      	  var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
+      	  var scroll = $(window).scrollTop(); //スクロールの位置を取得
+      	  var windowHeight = $(window).height(); //ウインドウの高さを取得
+      	  if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+      	    $(this).addClass('active'); //クラス「active」を与える
+      	  }
+      	});
+      });
+    </script>
+
+  </head>
+  <body>
+
+  <!--ヘッダー部分ここから-->
+    <div class="header">
+      <div class="container">
+        <img src="img/Pickles_log.png" class="pickles-logo" width=120px height=120px>
+        <div class="row link w-75 text-center">
+          <a class="col-lg-2 col-sm-5 text-dark font-weight-bold bg-light" href="#contents1">ABOUT</a>
+          <a class="col-lg-2 col-sm-5 text-dark font-weight-bold bg-light" href="#contents2">MEMBERS</a>
+          <a class="col-lg-2 col-sm-5 text-dark font-weight-bold bg-light" href="#contents3">学んだskill</a>
+          <a class="col-lg-2 col-sm-5 text-dark font-weight-bold bg-light" href="#contents4">Twitter</a>
+        </div>
+        <div class="headerTitle text-center">
+          <h1>Pickles</h1>
+          <p>Medical Engineer Community</p>
+          <a class="btn btn-lg btn-dark" href="#" role="button">ABOUT Pickles</a>
+        </div>
+      </div>
+    </div>
+
+
+  <!--コンテンツ１部分ここから-->
+  <section>
+    <div class="contents1" id="contents1">
+      <div class="contents1-container">
+          <p class="con1-p">WHAT IS<p>
+          <h2 class="con1-title pb-3">PICKLES?</h2>
+          <p class="con1-answer pb-3">
+              医療とプログラミングの新たな可能性を<br>
+              模索する、プログラミングチームです。
+          </p>
+          <a class="btn btn-lg btn-dark" href="#" role="button">VIEW MORE</a>
+      </div>
+
+      <div class="container">
+        <div class="row mb-5">
+          <img src="img/iryou_jujisya.png" class="col-4 pl-5 pt-5 w-100 h-100">
+          <img src="img/plus.png" class="col-4 pl-5 pt-5 w-100 h-100">
+          <img src="img/664309.png" class="col-4 pl-5 pt-5 w-100 h-100">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--コンテンツ２部分ここから-->
+  <section>
+      <div class="container" id="contents2">
+        <div class="row">
+          <div class="row col-md-5 text-center">
+            <h2 class="con1-title col-12">MEMBERS</h2>
+            <p class="con1-answer col-12 pt-3">
+              メンバーは全員、医療従事者です。
+            </p>
+            <img src="img/pickleslogo.png" class="col-12" width=100px height=300px>
+          </div>
+          <div class="row animationleft col-md-7 text-center">
+            <a class="col-8 font-weight-bold text-dark pl-5" href="#">REN</a>
+            <img src="img/REN.jpg" class="col-4 pl-5 pb-4" width=150px height=150px>
+            <a class="col-8 font-weight-bold text-dark pl-5" href="#">たみお</a>
+            <img src="img/tamio.jpg" class="col-4 pl-5 pb-4" width=150px height=150px>
+            <a class="col-8 font-weight-bold text-dark pl-5" href="#">もりじゅん</a>
+            <img src="img/morijun.jpg" class="col-4 pl-5 pb-4" width=150px height=150px>
+            <a class="col-8 font-weight-bold text-dark pl-5" href="#">しょーち</a>
+            <img src="img/sho-ti.jpg" class="col-4 pl-5 pb-4" width=150px height=150px>
+            <a class="col-8 font-weight-bold text-dark pl-5" href="#">S.O</a>
+            <img src="img/SO.jpg" class="col-4 pl-5 pb-4" width=150px height=150px>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--コンテンツ３部分ここから-->
+    <div class="container" id="contents3">
+      <div class="contents1-container">
+          <h2 class="con1-title col-12">学んだスキル</h2>
+          <p class="con1-answer col-12">
+            Webデザイン
+          </p>
+          <a href="#" class="btn btn-lg btn-dark mb-5" role="button">VIEW MORE</a>
+          <img src="img/お野菜と果物２.png" class="col-12 bg-info mb-5">
+          <div class="py-3">Webサイト作成のためのHTML CSS JavaScriptを学んでいます。</div>
+      </div>
+    </div>
+  
+  <!--コンテンツ４部分ここから-->
+    <div class="container" id="contents4">
+      <div class="contents1-container">
+        <h2 class="con1-title col-12">Twitter</h2>
+        <p class="con1-answer col-12 mb-4">
+          メンバーのTwitterはこちら
+        </p>
+      </div>
+      <ul class="nav nav-tabs">
+        <li class="nav item"><a href="#REN" class="nav-link active" data-toggle="tab">REN</a></li>
+        <li class="nav item"><a href="#tamio" class="nav-link" data-toggle="tab">たみお</a></li>
+        <li class="nav item"><a href="#morijun" class="nav-link" data-toggle="tab">もりじゅん</a></li>
+        <li class="nav item"><a href="#sho-ti" class="nav-link" data-toggle="tab">しょーち</a></li>
+        <li class="nav item"><a href="#SO" class="nav-link" data-toggle="tab">S.O</a></li>
+      </ul>
+      <div class="tab-content py-4 text-center">
+        <div id="REN" class="tab-pane active">
+          <p><a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/Pt_Baboon?ref_src=twsrc%5Etfw">Tweets by Pt_Baboon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+          <p><a href="https://twitter.com/Pt_Baboon?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-show-count="false">Follow @Pt_Baboon</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+        </div>
+        <div id="tamio" class="tab-pane">
+          <p><a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/00tamio00?ref_src=twsrc%5Etfw">Tweets by 00tamio00</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+          <p><a href="https://twitter.com/00tamio00?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-show-count="false">Follow @00tamio00</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+        </div>
+        <div id="morijun" class="tab-pane">
+          <p><a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/penk370?ref_src=twsrc%5Etfw">Tweets by penk370</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+          <p><a href="https://twitter.com/penk370?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-show-count="false">Follow @penk370</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+        </div>
+        <div id="sho-ti" class="tab-pane">
+          <p><a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/narasika0814?ref_src=twsrc%5Etfw">Tweets by narasika0814</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+          <p><a href="https://twitter.com/narasika0814?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-show-count="false">Follow @narasika0814</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+        </div>
+        <div id="SO" class="tab-pane">
+          <p><a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/S_O_06?ref_src=twsrc%5Etfw">Tweets by S_O_06</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+          <p><a href="https://twitter.com/S_O_06?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-show-count="false">Follow @S_O_06</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+        </div>
+      </div>
+    </div>
+  
+  <!--footer部分ここから-->
+    <footer class="text-center">
+      <div class="footerLogo">
+        <img src="img/pickleslogo.png" width=200px>
+        <p>Medical Engineer Community</p>
+      </div>
+    </footer>
+
+    </div>
+  </body>
+</html>
