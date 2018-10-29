@@ -14,30 +14,13 @@
 .header{
     background-image: url(img/pikurusu.jpg);
     background-size: cover;
+    opacity: 0.8;
     height: 500px;
-    width: flex;
-}
-
-.pickles-logo{
-    position: absolute;
-    top: 30px;
-    left:30px;
-    z-index: 10;
 }
 
 .link{
-    position: absolute;
-    top: 30px;
-    left: 25%;
     font-size: 20px;
     text-decoration: none;
-}
-
-.headerTitle{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    
 }
 
 .headerTitle h1{
@@ -45,7 +28,7 @@
 }
 
 .headerTitle p{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .contents1-container{
@@ -87,7 +70,13 @@
 
 
   .animationleft a{
-      font-size: 50px;
+      font-size: 40px;
+  }
+
+  .animationleft img{
+      display:inline-block;
+      width: 10%;
+      height: 20%;
   }
 
   .animationleft{
