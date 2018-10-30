@@ -25,10 +25,12 @@
 
 .headerTitle h1{
     font-size: 90px;
+    opacity: 1.0;
 }
 
 .headerTitle p{
     font-size: 30px;
+    opacity: 1.0;
 }
 
 .contents1-container{
@@ -51,6 +53,9 @@
     align-items: center;
   }
   
+  .con1-answer{
+      font-size: 20px;
+  }
   
   .con1-title:before,.con1-title:after{
     content:"";
